@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/novac1"
+    android:background="@color/lightgrey">
+    <Spinner
+        android:id="@+id/dlkn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/obicni_margin"
+        android:layout_marginTop="20dp"
+        ></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iznos"
+        android:padding="@dimen/obicni_margin"
+        android:hint="Iznos"
+        android:layout_below="@+id/dlkn"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:id="@+id/slikaDolara"
+            android:padding="@dimen/obicni_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dolar"
+            android:clickable="true"/>-->
+</RelativeLayout>
+
+

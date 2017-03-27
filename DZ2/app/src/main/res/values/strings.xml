@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Domaća zadaća 2</string>
+    <string name="title_activity_novac">Pretvori valutu</string>
+    <string name="title_activity_temperatura">Pretvori temperaturu</string>
+    <string name="title_activity_duzina">Pretvori dužine</string>
+    <string name="title_activity_tekucine">Pretvori tekućine</string>
+    <string name="tKonvertiraj">Konvertiraj</string>
+
+    <string-array name="popisDuzina">
+        <item>inch u cm</item>
+        <item>cm u inch</item>
+    </string-array>
+
+    <string-array name="popisTekucina">
+        <item>ml u dl</item>
+        <item>ml u l</item>
+        <item>dl u ml</item>
+        <item>dl u l</item>
+        <item>l u dl</item>
+        <item>l u ml</item>
+
+    </string-array>
+
+    <string-array name="popisNovaca">
+        <item>kuna u dolar</item>
+        <item>dolar u kuna</item>
+    </string-array>
+
+    <string-array name="popisTemperatura">
+        <item>Celzius u Kelvin</item>
+        <item>Kelvin u Celzius</item>
+    </string-array>
+
+</resources>

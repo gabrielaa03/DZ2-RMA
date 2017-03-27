@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightblue">
+        <Spinner
+            android:id="@+id/popistekucina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/obicni_margin">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/upistekucine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/popistekucina"
+            android:layout_marginTop="50dp"
+            android:hint="Unesi kolicinu tekucine:"
+            android:padding="@dimen/obicni_margin"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+
+<Button
+    android:id="@+id/bTekucine"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/tKonvertiraj"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:textSize="20dp"
+   />
+
+    </RelativeLayout>
+
