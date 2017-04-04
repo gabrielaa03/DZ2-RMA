@@ -4,7 +4,7 @@
     <string name="title_activity_temperatura">Pretvori temperaturu</string>
     <string name="title_activity_duzina">Pretvori dužine</string>
     <string name="title_activity_tekucine">Pretvori tekućine</string>
-    <string name="tKonvertiraj">Konvertiraj</string>
+    <string name="tKonvertiraj">PRETVORI</string>
     <string name="title_activity_rezultati">Rezultati</string>
     <string name="kn">kn</string>
     <string name="dolar">$</string>
@@ -18,6 +18,10 @@
     <string name="m">m :</string>
     <string name="dm">dm :</string>
     <string name="inch">inch :</string>
+    <string name="konverterDuzina">PRETVORI IZNOS DUŽINE</string>
+    <string name="konverterNovca">PRETVORI VALUTU</string>
+    <string name="konverterTekucina">PRETVORI VOLUMEN TEKUĆINE</string>
+    <string name="konverterTemperature">PRETVORI IZNOS TEMPERATURE</string>
 
     <string-array name="popisDuzina">
         <item>inch u cm</item>

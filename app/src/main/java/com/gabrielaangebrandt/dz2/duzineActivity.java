@@ -31,8 +31,8 @@ public class duzineActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void setUpUI() {
-        this.spinnerDuzina = (Spinner) findViewById(R.id.spinner1);
-        this.button = (Button) findViewById(R.id.button);
+        this.spinnerDuzina = (Spinner) findViewById(R.id.spinnerDuzina);
+        this.button = (Button) findViewById(R.id.dButton);
         this.iznos = (EditText) findViewById(R.id.editText);
 
 

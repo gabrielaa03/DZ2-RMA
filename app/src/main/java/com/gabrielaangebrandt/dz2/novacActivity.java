@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -15,7 +15,7 @@ public class novacActivity extends AppCompatActivity implements View.OnClickList
     public static final String KEY_UNESENI_IZNOS = "iznos za pretvorbu unesen";
     public static final String KEY_ODABRANA_KONVERZIJA = "spinner odabran";
 
-    ImageButton slikaDolara;
+    Button slikaDolara;
     EditText iznos;
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
@@ -32,7 +32,7 @@ public class novacActivity extends AppCompatActivity implements View.OnClickList
 
     private void setUpUI() {
         this.spinner = (Spinner) findViewById(R.id.spinnerNovac);
-        this.slikaDolara = (ImageButton) findViewById(R.id.imageButtonDolar);
+        this.slikaDolara = (Button) findViewById(R.id.nButton);
         this.iznos = (EditText) findViewById(R.id.editTextNovac);
 
 

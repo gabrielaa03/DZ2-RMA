@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -15,7 +15,7 @@ public class temperaturaActivity extends AppCompatActivity implements View.OnCli
     public static final String KEY_UNOS_TEMPERATURE= "temperatura";
     public static final String KEY_KONVERZIJA_TEMPERATURE = "odabrana konverzija";
 
-    ImageButton button;
+    Button button;
     EditText iznos_temperature;
     Spinner spinner_temperatura;
     String odabrana_konverzija;
@@ -32,7 +32,7 @@ public class temperaturaActivity extends AppCompatActivity implements View.OnCli
 
     private void setUpUI() {
         this.spinner_temperatura = (Spinner) findViewById(R.id.konverzijaTemperature);
-        this.button = (ImageButton) findViewById(R.id.bTemperatura);
+        this.button = (Button) findViewById(R.id.bTemperatura);
         this.iznos_temperature = (EditText) findViewById(R.id.iznosTemperature);
 
         adapter = ArrayAdapter.createFromResource(this, R.array.popisTemperatura, android.R.layout.simple_spinner_item);

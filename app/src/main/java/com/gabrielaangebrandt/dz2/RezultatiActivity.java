@@ -237,7 +237,7 @@ public class RezultatiActivity extends AppCompatActivity{
                             e.printStackTrace();
                         }
 
-                        double intTextDuzina = novo / 2.81;
+                        double intTextDuzina = novo * 2.541;
 
                         pretvoreno.setText(String.valueOf(intTextDuzina));
                         break;
@@ -252,7 +252,7 @@ public class RezultatiActivity extends AppCompatActivity{
                             e.printStackTrace();
                         }
 
-                        double intTextDuzina1 = novo * 2.81;
+                        double intTextDuzina1 = novo / 2.54;
 
                         pretvoreno.setText(String.valueOf(intTextDuzina1));
                         break;
