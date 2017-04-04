@@ -60,9 +60,12 @@ public class novacActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         Intent intent = new Intent(getApplicationContext(), RezultatiActivity.class);
         intent.putExtra(KEY_ODABRANA_KONVERZIJA, odabrana_konverzija);
-        intent.putExtra(KEY_UNESENI_IZNOS, iznos.getText().toString());
-        this.startActivity(intent);
-
+        if(iznos.getText().toString().isEmpty() || iznos.getText().length()==0 || iznos.getText().toString()==""){
+            iznos.setError("Unesite vrijednost");
+        }else {
+            intent.putExtra(KEY_UNESENI_IZNOS, iznos.getText().toString());
+            this.startActivity(intent);
+        }
     }
 }
 

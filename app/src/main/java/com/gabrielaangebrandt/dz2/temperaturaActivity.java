@@ -61,8 +61,12 @@ public class temperaturaActivity extends AppCompatActivity implements View.OnCli
 
         Intent intent = new Intent(getApplicationContext(), RezultatiActivity.class);
         intent.putExtra(KEY_KONVERZIJA_TEMPERATURE, odabrana_konverzija);
-        intent.putExtra(KEY_UNOS_TEMPERATURE, iznos_temperature.getText().toString());
-        this.startActivity(intent);
+        if(iznos_temperature.getText().toString().isEmpty() || iznos_temperature.getText().length()==0 || iznos_temperature.getText().toString()==""){
+            iznos_temperature.setError("Unesite vrijednost");
+        }else {
+            intent.putExtra(KEY_UNOS_TEMPERATURE, iznos_temperature.getText().toString());
+            this.startActivity(intent);
+        }
 
     }
 }

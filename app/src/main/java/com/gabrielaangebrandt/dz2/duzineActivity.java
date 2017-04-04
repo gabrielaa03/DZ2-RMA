@@ -61,9 +61,15 @@ public class duzineActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
 
         Intent intent = new Intent(getApplicationContext(), RezultatiActivity.class);
-        intent.putExtra(KEY_KONVERZIJA_DUZINA,spinnerDuzina.getSelectedItem().toString());
-        intent.putExtra(KEY_IZNOS, iznos.getText().toString());
-        this.startActivity(intent);
+        intent.putExtra(KEY_KONVERZIJA_DUZINA, spinnerDuzina.getSelectedItem().toString());
+        if(iznos.getText().toString().isEmpty() || iznos.getText().length()==0 || iznos.getText().toString()==""){
+            iznos.setError("Unesite vrijednost");
+        }
+        else {
+            intent.putExtra(KEY_IZNOS, iznos.getText().toString());
+            this.startActivity(intent);
+        }
+
 
     }
 }

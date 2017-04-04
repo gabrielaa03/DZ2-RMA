@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Domaća zadaća 2</string>
+    <string name="app_name">UniCon</string>
     <string name="title_activity_novac">Pretvori valutu</string>
     <string name="title_activity_temperatura">Pretvori temperaturu</string>
     <string name="title_activity_duzina">Pretvori dužine</string>

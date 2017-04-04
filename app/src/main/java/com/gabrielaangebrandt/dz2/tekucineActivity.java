@@ -63,8 +63,12 @@ public class tekucineActivity extends AppCompatActivity implements View.OnClickL
         String text1 = this.iznos_tekucine.getText().toString();
         Intent intent = new Intent(getApplicationContext(), RezultatiActivity.class);
         intent.putExtra(KEY_KONVERZIJA_TEKUCINE, odabrana_konverzija);
-        intent.putExtra(KEY_IZNOS_TEKUCINE, iznos_tekucine.getText().toString());
-        this.startActivity(intent);
+        if(iznos_tekucine.getText().toString().isEmpty() || iznos_tekucine.getText().length()==0 || iznos_tekucine.getText().toString()==""){
+         iznos_tekucine.setError("Unesite vrijednost");
+        }else {
+            intent.putExtra(KEY_IZNOS_TEKUCINE, iznos_tekucine.getText().toString());
+            this.startActivity(intent);
+        }
 
     }
 }
