@@ -5,10 +5,10 @@
     android:background="@color/black">
     <TextView
         android:id="@+id/prvaJedinica"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:textSize="50dp"
-        android:text="1.jedinica"
+        android:text="1"
         android:layout_marginTop="100dp"
         android:padding="10dp"
         android:textStyle="bold"
@@ -32,12 +32,13 @@
         />
     <TextView
         android:id="@+id/drugaJedinica"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:hint="2.jedinica"
+        android:hint="2"
         android:layout_marginTop="100dp"
         android:layout_below="@id/prvaJedinica"
         android:textStyle="bold"
+        android:lines="1"
         android:padding="10dp"
         android:textSize="50dp"
         android:textColor="@color/colorPrimaryDark"

@@ -52,12 +52,9 @@ public class novacActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
-
         this.slikaDolara.setOnClickListener(this); //osluškivac na klik
 
     }
-
-
 
     @Override
     public void onClick(View v) {

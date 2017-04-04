@@ -21,8 +21,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text1"
-            android:layout_marginTop="10dp"
-            android:padding="@dimen/obicni_margin">
+            android:layout_marginTop="30dp"
+            android:background="@drawable/okvir"
+            android:padding="@dimen/margin_spinner">
         </Spinner>
 
         <EditText
@@ -31,8 +32,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/spinnerTekucina"
+            android:inputType="numberDecimal"
             android:layout_marginTop="50dp"
-            android:hint="Unesi kolicinu tekucine:"
+            android:hint="Unesi volumen:"
+            android:textColor="@color/black"
             android:padding="@dimen/obicni_margin"
             android:textSize="25dp"
             android:textAlignment="center"/>

@@ -9,7 +9,7 @@ public class RezultatiActivity extends AppCompatActivity{
 
     TextView prvaJedinica, drugaJedinica, pretvoreno, uneseno;
     String textNovac, textTemperature, textDuzina, textTekucina;
-    double novo, novo1;
+    double novo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class RezultatiActivity extends AppCompatActivity{
             String konverzija = intent.getStringExtra(novacActivity.KEY_ODABRANA_KONVERZIJA);
 
             switch (konverzija){
-                case "kuna u dolar":
+                case "kuna —> dolar":
                     prvaJedinica.setText(R.string.kn);
                     drugaJedinica.setText(R.string.dolar);
                     textNovac=textNovac.replace(",", "");
@@ -51,7 +51,7 @@ public class RezultatiActivity extends AppCompatActivity{
 
                     pretvoreno.setText(String.valueOf(intTextNovac));
                     break;
-                case "dolar u kuna":
+                case "dolar —> kuna":
                     prvaJedinica.setText(R.string.dolar);
                     drugaJedinica.setText(R.string.kn);
                     textNovac=textNovac.replace(",", "");
@@ -78,7 +78,7 @@ public class RezultatiActivity extends AppCompatActivity{
             String konverzija = intent.getStringExtra(temperaturaActivity.KEY_KONVERZIJA_TEMPERATURE);
 
             switch (konverzija){
-                case "Celzius u Kelvin":
+                case "Celzius —> Kelvin":
                     prvaJedinica.setText(R.string.Celzius);
                     drugaJedinica.setText(R.string.Kelvin);
                     textTemperature=textTemperature.replace(",", "");
@@ -94,7 +94,7 @@ public class RezultatiActivity extends AppCompatActivity{
 
                     pretvoreno.setText(String.valueOf(intTextTemperature));
                     break;
-                case "Kelvin u Celzius":
+                case "Kelvin —> Celzius":
                     prvaJedinica.setText(R.string.Kelvin);
                     drugaJedinica.setText(R.string.Celzius);
                     textTemperature=textTemperature.replace(",", "");
@@ -109,6 +109,37 @@ public class RezultatiActivity extends AppCompatActivity{
                     pretvoreno.setText(String.valueOf(intTextTemperature1));
                     break;
 
+                case "Fahrenheit —> Celzius":
+                    prvaJedinica.setText(R.string.Fahrenheit);
+                    drugaJedinica.setText(R.string.Celzius);
+                    textTemperature=textTemperature.replace(",", "");
+                    try
+                    {
+                        novo = Double.parseDouble(textTemperature);
+                    }catch(NumberFormatException e)
+                    {
+                        e.printStackTrace();
+                    }
+                    double intTextTemperature2 = novo - 17.77778;
+                    pretvoreno.setText(String.valueOf(intTextTemperature2));
+                    break;
+
+                case "Celzius —> Fahrenheit":
+                    prvaJedinica.setText(R.string.Celzius);
+                    drugaJedinica.setText(R.string.Fahrenheit);
+                    textTemperature=textTemperature.replace(",", "");
+                    try
+                    {
+                        novo = Double.parseDouble(textTemperature);
+                    }catch(NumberFormatException e)
+                    {
+                        e.printStackTrace();
+                    }
+                    double intTextTemperature3 = novo + 17.77778;
+                    pretvoreno.setText(String.valueOf(intTextTemperature3));
+                    break;
+
+
             }
         }
 
@@ -120,7 +151,7 @@ public class RezultatiActivity extends AppCompatActivity{
             String konverzija = intent.getStringExtra(tekucineActivity.KEY_KONVERZIJA_TEKUCINE);
 
             switch (konverzija){
-                case "ml u dl":
+                case "ml —> dl":
                     prvaJedinica.setText(R.string.mililitar);
                     drugaJedinica.setText(R.string.decilitar);
                     textTekucina=textTekucina.replace(",", "");
@@ -136,7 +167,7 @@ public class RezultatiActivity extends AppCompatActivity{
 
                     pretvoreno.setText(String.valueOf(intTextTekucine));
                     break;
-                case "l u dl":
+                case "l —> dl":
                     prvaJedinica.setText(R.string.litra);
                     drugaJedinica.setText(R.string.decilitar);
                     textTekucina=textTekucina.replace(",", "");
@@ -151,7 +182,7 @@ public class RezultatiActivity extends AppCompatActivity{
                     pretvoreno.setText(String.valueOf(intTextTekucine1));
                     break;
 
-                case "dl u l":
+                case "dl —> l":
                     prvaJedinica.setText(R.string.decilitar);
                     drugaJedinica.setText(R.string.litra);
                     textTekucina=textTekucina.replace(",", "");
@@ -166,7 +197,7 @@ public class RezultatiActivity extends AppCompatActivity{
                     pretvoreno.setText(String.valueOf(intTextTekucine2));
                     break;
 
-                case "dl u ml":
+                case "dl —> ml":
                     prvaJedinica.setText(R.string.decilitar);
                     drugaJedinica.setText(R.string.mililitar);
                     textTekucina=textTekucina.replace(",", "");
@@ -183,7 +214,7 @@ public class RezultatiActivity extends AppCompatActivity{
                     pretvoreno.setText(String.valueOf(intTextTekucine3));
                     break;
 
-                case "l u ml":
+                case "l —> ml":
                     prvaJedinica.setText(R.string.litra);
                     drugaJedinica.setText(R.string.mililitar);
                     textTekucina=textTekucina.replace(",", "");
@@ -200,7 +231,7 @@ public class RezultatiActivity extends AppCompatActivity{
                     pretvoreno.setText(String.valueOf(intTextTekucine4));
                     break;
 
-                case "ml u l":
+                case "ml —> l":
                     prvaJedinica.setText(R.string.mililitar);
                     drugaJedinica.setText(R.string.litra);
                     textTekucina=textTekucina.replace(",", "");
@@ -227,7 +258,7 @@ public class RezultatiActivity extends AppCompatActivity{
                 String konverzija = intent.getStringExtra(duzineActivity.KEY_KONVERZIJA_DUZINA);
 
                 switch (konverzija) {
-                    case "inch u cm":
+                    case "inch —> cm":
                         prvaJedinica.setText(R.string.inch);
                         drugaJedinica.setText(R.string.cm);
                         textDuzina = textDuzina.replace(",", "");
@@ -242,7 +273,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina));
                         break;
 
-                    case "cm u inch":
+                    case "cm —> inch":
                         prvaJedinica.setText(R.string.cm);
                         drugaJedinica.setText(R.string.inch);
                         textDuzina = textDuzina.replace(",", "");
@@ -257,7 +288,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina1));
                         break;
 
-                    case "m  u cm":
+                    case "m  —> cm":
                         prvaJedinica.setText(R.string.m);
                         drugaJedinica.setText(R.string.cm);
                         textDuzina = textDuzina.replace(",", "");
@@ -272,7 +303,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina2));
                         break;
 
-                    case "dm u cm":
+                    case "dm —> cm":
                         prvaJedinica.setText(R.string.dm);
                         drugaJedinica.setText(R.string.cm);
                         textDuzina = textDuzina.replace(",", "");
@@ -287,7 +318,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina3));
                         break;
 
-                    case "mm u cm":
+                    case "mm —> cm":
                         prvaJedinica.setText(R.string.mm);
                         drugaJedinica.setText(R.string.cm);
                         textDuzina = textDuzina.replace(",", "");
@@ -302,7 +333,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina4));
                         break;
 
-                    case "mm u dm":
+                    case "mm —> dm":
                         prvaJedinica.setText(R.string.mm);
                         drugaJedinica.setText(R.string.dm);
                         textDuzina = textDuzina.replace(",", "");
@@ -317,7 +348,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina5));
                         break;
 
-                    case "mm u m":
+                    case "mm —> m":
                         prvaJedinica.setText(R.string.mm);
                         drugaJedinica.setText(R.string.m);
                         textDuzina = textDuzina.replace(",", "");
@@ -332,7 +363,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina6));
                         break;
 
-                    case "dm u mm":
+                    case "dm —> mm":
                         prvaJedinica.setText(R.string.dm);
                         drugaJedinica.setText(R.string.mm);
                         textDuzina = textDuzina.replace(",", "");
@@ -348,7 +379,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         break;
 
 
-                    case "dm u m":
+                    case "dm —> m":
                         prvaJedinica.setText(R.string.dm);
                         drugaJedinica.setText(R.string.m);
                         textDuzina = textDuzina.replace(",", "");
@@ -363,7 +394,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina8));
                         break;
 
-                    case "m u dm":
+                    case "m —> dm":
                         prvaJedinica.setText(R.string.m);
                         drugaJedinica.setText(R.string.dm);
                         textDuzina = textDuzina.replace(",", "");
@@ -378,7 +409,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina9));
                         break;
 
-                    case "m u cm":
+                    case "m —> cm":
                         prvaJedinica.setText(R.string.m);
                         drugaJedinica.setText(R.string.cm);
                         textDuzina = textDuzina.replace(",", "");
@@ -393,7 +424,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina10));
                         break;
 
-                    case "m u mm":
+                    case "m —> mm":
                         prvaJedinica.setText(R.string.m);
                         drugaJedinica.setText(R.string.mm);
                         textDuzina = textDuzina.replace(",", "");
@@ -408,7 +439,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina11));
                         break;
 
-                    case "cm u mm":
+                    case "cm —> mm":
                         prvaJedinica.setText(R.string.cm);
                         drugaJedinica.setText(R.string.mm);
                         textDuzina = textDuzina.replace(",", "");
@@ -423,7 +454,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina12));
                         break;
 
-                    case "cm u m":
+                    case "cm —> m":
                         prvaJedinica.setText(R.string.cm);
                         drugaJedinica.setText(R.string.m);
                         textDuzina = textDuzina.replace(",", "");
@@ -438,7 +469,7 @@ public class RezultatiActivity extends AppCompatActivity{
                         pretvoreno.setText(String.valueOf(intTextDuzina13));
                         break;
 
-                    case "cm u dm":
+                    case "cm —> dm":
                         prvaJedinica.setText(R.string.cm);
                         drugaJedinica.setText(R.string.dm);
                         textDuzina = textDuzina.replace(",", "");

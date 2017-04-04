@@ -22,8 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text1"
-        android:layout_marginTop="10dp"
-        android:padding="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/okvir"
+        android:padding="@dimen/margin_spinner"
         >
     </Spinner>
 
@@ -34,9 +35,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:hint="Unesi temperaturu"
+        android:inputType="numberDecimal"
         android:layout_below="@+id/konverzijaTemperature"
         android:textAlignment="center"
         android:textSize="25dp"
+        android:textColor="@color/black"
         android:padding="24dp"
 />
       <Button

@@ -9,6 +9,7 @@
     <string name="kn">kn</string>
     <string name="dolar">$</string>
     <string name="Celzius">°C</string>
+    <string name="Fahrenheit">°F</string>
     <string name="Kelvin">K</string>
     <string name="mililitar">ml :</string>
     <string name="decilitar">dl :</string>
@@ -24,38 +25,40 @@
     <string name="konverterTemperature">PRETVORI IZNOS TEMPERATURE</string>
 
     <string-array name="popisDuzina">
-        <item>inch u cm</item>
-        <item>cm u inch</item>
-        <item>cm u m</item>
-        <item>m u cm</item>
-        <item>mm u cm</item>
-        <item>cm u mm</item>
-        <item>dm u m</item>
-        <item>m u dm</item>
-        <item>cm u dm</item>
-        <item>dm u cm</item>
-        <item>mm u m</item>
-        <item>m u mm</item>
+        <item>inch —> cm</item>
+        <item>cm —> inch</item>
+        <item>cm —> m</item>
+        <item>m —> cm</item>
+        <item>mm —> cm</item>
+        <item>cm —> mm</item>
+        <item>dm —> m</item>
+        <item>m —> dm</item>
+        <item>cm —> dm</item>
+        <item>dm —> cm</item>
+        <item>mm —> m</item>
+        <item>m —> mm</item>
     </string-array>
 
     <string-array name="popisTekucina">
-        <item>ml u dl</item>
-        <item>ml u l</item>
-        <item>dl u ml</item>
-        <item>dl u l</item>
-        <item>l u dl</item>
-        <item>l u ml</item>
+        <item>ml —> dl</item>
+        <item>ml —> l</item>
+        <item>dl —> ml</item>
+        <item>dl —> l</item>
+        <item>l —> dl</item>
+        <item>l —> ml</item>
 
     </string-array>
 
     <string-array name="popisNovaca">
-        <item>kuna u dolar</item>
-        <item>dolar u kuna</item>
+        <item>kuna —> dolar</item>
+        <item>dolar —> kuna</item>
     </string-array>
 
-    <string-array name="popisTemperatura">
-        <item>Celzius u Kelvin</item>
-        <item>Kelvin u Celzius</item>
+    <string-array name="popisTemperatura"  color="#ffffff">
+        <item>Celzius —> Kelvin</item>
+        <item>Kelvin —> Celzius</item>
+        <item>Celzius —> Fahrenheit</item>
+        <item>Fahrenheit —> Celzius</item>
     </string-array>
 
 </resources>

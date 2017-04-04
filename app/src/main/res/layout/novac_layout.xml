@@ -22,9 +22,10 @@
         android:id="@+id/spinnerNovac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/obicni_margin"
+        android:padding="@dimen/margin_spinner"
         android:layout_below="@+id/text1"
-        android:layout_marginTop="10dp"
+        android:background="@drawable/okvir"
+        android:layout_marginTop="30dp"
         ></Spinner>
 
     <EditText
@@ -33,6 +34,8 @@
         android:id="@+id/editTextNovac"
         android:padding="@dimen/obicni_margin"
         android:hint="Unesi iznos:"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
         android:layout_below="@+id/spinnerNovac"
         android:layout_marginTop="50dp"
         android:textAlignment="center"

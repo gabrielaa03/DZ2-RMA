@@ -14,50 +14,50 @@
         android:id="@+id/prviText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Odaberite konverziju."
+        android:text="Odaberite pretvorbu."
         android:padding="@dimen/margin"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
-        android:textSize="15dp"/>
+        android:textSize="25dp"/>
 
     <ImageButton
-        android:id="@+id/prviGumb"
-        android:layout_width="350dp"
-        android:layout_height="140dp"
+        android:id="@+id/treciGumb"
+        android:layout_width="158dp"
+        android:layout_marginRight="9dp"
+        android:layout_height="160dp"
+        android:layout_toLeftOf="@+id/drugiGumb"
         android:padding="@dimen/margin"
-        android:layout_below="@id/drugiGumb"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/novac" />
+        android:background="@drawable/duzina"
+        android:layout_below="@+id/prviText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <ImageButton
         android:id="@+id/drugiGumb"
-        android:layout_width="170dp"
-        android:layout_height="150dp"
+        android:layout_width="158dp"
+        android:layout_height="160dp"
         android:padding="@dimen/margin"
         android:background="@drawable/temperatura"
         android:layout_below="@+id/prviText"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         />
+
     <ImageButton
-        android:id="@+id/treciGumb"
-        android:layout_width="170dp"
+        android:id="@+id/prviGumb"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:padding="@dimen/margin"
-        android:background="@drawable/duzina"
+        android:layout_below="@+id/drugiGumb"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/novac" />
 
-        android:layout_below="@+id/prviText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
     <ImageButton
         android:id="@+id/cetvrtiGumb"
-        android:layout_width="350dp"
-        android:layout_height="140dp"
-        android:padding="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:background="@drawable/tekucina"
-
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/prviGumb"
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

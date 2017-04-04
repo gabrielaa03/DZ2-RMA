@@ -21,8 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text1"
-        android:padding="@dimen/obicni_margin"
-        android:layout_marginTop="10dp"
+        android:padding="@dimen/margin_spinner"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/okvir"
         android:layout_centerHorizontal="true"></Spinner>
 
     <EditText
@@ -31,8 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/spinnerDuzina"
         android:layout_marginTop="50dp"
-        android:hint="Unesi vrijednost"
+        android:inputType="numberDecimal"
+        android:hint="Unesi iznos dužine:"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:padding="@dimen/obicni_margin"
         android:textAlignment="center"/>
