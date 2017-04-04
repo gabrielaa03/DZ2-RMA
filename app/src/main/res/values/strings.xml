@@ -5,10 +5,33 @@
     <string name="title_activity_duzina">Pretvori dužine</string>
     <string name="title_activity_tekucine">Pretvori tekućine</string>
     <string name="tKonvertiraj">Konvertiraj</string>
+    <string name="title_activity_rezultati">Rezultati</string>
+    <string name="kn">kn</string>
+    <string name="dolar">$</string>
+    <string name="Celzius">°C</string>
+    <string name="Kelvin">K</string>
+    <string name="mililitar">ml :</string>
+    <string name="decilitar">dl :</string>
+    <string name="litra">l :</string>
+    <string name="mm">mm :</string>
+    <string name="cm">cm :</string>
+    <string name="m">m :</string>
+    <string name="dm">dm :</string>
+    <string name="inch">inch :</string>
 
     <string-array name="popisDuzina">
         <item>inch u cm</item>
         <item>cm u inch</item>
+        <item>cm u m</item>
+        <item>m u cm</item>
+        <item>mm u cm</item>
+        <item>cm u mm</item>
+        <item>dm u m</item>
+        <item>m u dm</item>
+        <item>cm u dm</item>
+        <item>dm u cm</item>
+        <item>mm u m</item>
+        <item>m u mm</item>
     </string-array>
 
     <string-array name="popisTekucina">

@@ -4,7 +4,7 @@
         android:layout_height="match_parent"
         android:background="@color/lightblue">
         <Spinner
-            android:id="@+id/popistekucina"
+            android:id="@+id/spinnerTekucina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -12,11 +12,11 @@
         </Spinner>
 
         <EditText
-            android:id="@+id/upistekucine"
+            android:id="@+id/vrijednostTekucine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/popistekucina"
+            android:layout_below="@+id/spinnerTekucina"
             android:layout_marginTop="50dp"
             android:hint="Unesi kolicinu tekucine:"
             android:padding="@dimen/obicni_margin"
@@ -24,17 +24,17 @@
             android:textAlignment="center"/>
 
 
-<Button
-    android:id="@+id/bTekucine"
-    android:layout_width="200dp"
-    android:layout_height="50dp"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:text="@string/tKonvertiraj"
-    android:textAlignment="center"
-    android:textStyle="bold"
-    android:textSize="20dp"
-   />
+        <Button
+            android:id="@+id/bTekucine"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tKonvertiraj"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+           />
 
     </RelativeLayout>
 

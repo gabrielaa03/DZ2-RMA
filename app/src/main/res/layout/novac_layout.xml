@@ -6,7 +6,7 @@
     android:id="@+id/novac1"
     android:background="@color/lightgrey">
     <Spinner
-        android:id="@+id/dlkn"
+        android:id="@+id/spinnerNovac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/obicni_margin"
@@ -16,10 +16,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/iznos"
+        android:id="@+id/editTextNovac"
         android:padding="@dimen/obicni_margin"
         android:hint="Iznos"
-        android:layout_below="@+id/dlkn"
+        android:layout_below="@+id/spinnerNovac"
         android:layout_marginTop="50dp"
         android:textAlignment="center"
         android:textSize="25dp"/>
@@ -27,7 +27,7 @@
         <ImageButton
             android:layout_width="250dp"
             android:layout_height="100dp"
-            android:id="@+id/slikaDolara"
+            android:id="@+id/imageButtonDolar"
             android:padding="@dimen/obicni_margin"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"

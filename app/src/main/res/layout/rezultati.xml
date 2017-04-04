@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue">
+    <TextView
+        android:id="@+id/prvaJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="1.jedinica"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:id="@+id/unesenaVrijednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/prvaJedinica"
+        android:layout_marginTop="100dp"
+        android:textSize="50dp"
+        android:hint="U"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/drugaJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="2.jedinica"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/prvaJedinica"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="50dp"
+
+
+        />
+    <TextView
+        android:id="@+id/izracunataVrijednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="I"
+        android:layout_below="@id/unesenaVrijednost"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/drugaJedinica"
+        android:textSize="50dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+
+
+        />
+</RelativeLayout>

@@ -32,6 +32,10 @@
             android:name=".tekucineActivity"
             android:label="@string/title_activity_tekucine"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".RezultatiActivity"
+            android:label="@string/title_activity_rezultati"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

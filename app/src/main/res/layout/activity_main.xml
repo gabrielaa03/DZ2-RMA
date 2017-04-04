@@ -22,20 +22,19 @@
 
     <Button
         android:id="@+id/prviGumb"
-        android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_below="@id/prviText"
-        android:layout_centerHorizontal="true"
         android:padding="@dimen/margin"
         android:background="@drawable/novac"
         />
     <Button
         android:id="@+id/drugiGumb"
-        android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/prviGumb"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/prviText"
+        android:layout_toRightOf="@id/prviGumb"
         android:padding="@dimen/margin"
         android:background="@drawable/temperatura"
         />
