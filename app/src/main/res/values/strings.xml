@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">UniCon</string>
-    <string name="title_activity_novac">Pretvori valutu</string>
-    <string name="title_activity_temperatura">Pretvori temperaturu</string>
-    <string name="title_activity_duzina">Pretvori dužine</string>
-    <string name="title_activity_tekucine">Pretvori tekućine</string>
+    <string name="title_activity_novac">Valuta</string>
+    <string name="title_activity_temperatura">Temperatura</string>
+    <string name="title_activity_duzina">Visina/udaljenost</string>
+    <string name="title_activity_tekucine">Tekućina</string>
     <string name="tKonvertiraj">PRETVORI</string>
     <string name="title_activity_rezultati">Rezultati</string>
     <string name="kn">kn</string>
@@ -19,7 +19,7 @@
     <string name="m">m :</string>
     <string name="dm">dm :</string>
     <string name="inch">inch :</string>
-    <string name="konverterDuzina">PRETVORI IZNOS DUŽINE</string>
+    <string name="konverterDuzina">PRETVORI VISINU/UDALJENOST</string>
     <string name="konverterNovca">PRETVORI VALUTU</string>
     <string name="konverterTekucina">PRETVORI VOLUMEN TEKUĆINE</string>
     <string name="konverterTemperature">PRETVORI IZNOS TEMPERATURE</string>
@@ -50,8 +50,8 @@
     </string-array>
 
     <string-array name="popisNovaca">
-        <item>kuna —> dolar</item>
-        <item>dolar —> kuna</item>
+        <item>kuna —> am. dolar</item>
+        <item>am. dolar —> kuna</item>
     </string-array>
 
     <string-array name="popisTemperatura"  color="#ffffff">

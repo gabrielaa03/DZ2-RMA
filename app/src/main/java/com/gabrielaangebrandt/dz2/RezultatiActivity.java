@@ -36,7 +36,7 @@ public class RezultatiActivity extends AppCompatActivity{
             String konverzija = intent.getStringExtra(novacActivity.KEY_ODABRANA_KONVERZIJA);
 
             switch (konverzija){
-                case "kuna —> dolar":
+                case "kuna —> am. dolar":
                     prvaJedinica.setText(R.string.kn);
                     drugaJedinica.setText(R.string.dolar);
                     textNovac=textNovac.replace(",", "");
@@ -51,7 +51,7 @@ public class RezultatiActivity extends AppCompatActivity{
 
                     pretvoreno.setText(String.valueOf(intTextNovac));
                     break;
-                case "dolar —> kuna":
+                case "am. dolar —> kuna":
                     prvaJedinica.setText(R.string.dolar);
                     drugaJedinica.setText(R.string.kn);
                     textNovac=textNovac.replace(",", "");
